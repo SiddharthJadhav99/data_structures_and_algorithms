@@ -19,6 +19,18 @@ class complex{
         rel.n2 = n2 + obj.n2;
         return rel; 
     }
+    complex operator-(complex obj){
+        complex rel;
+        rel.n1 = n1 - obj.n1;
+        rel.n2 = n2 - obj.n2;
+        return rel;
+    }
+    complex operator*(complex obj){
+        complex rel;
+        rel.n1 = n1*obj.n1;
+        rel.n2 = n2*obj.n2;
+        return rel;
+    }
     void printComplex(){
         cout<<n1<<" + "<<n2<<"i"<<endl;
 
