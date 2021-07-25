@@ -16,14 +16,19 @@ void printNode(Node *head){
     }
 }
 int main(){
-    Node *head = NULL;
-    Node *second = NULL;
-    Node *third = NULL;
-    head = new Node(10);
-    second = new Node(20);
-    head->next = second;
-    third = new Node (30);
-    second->next = third;
+    // Node *head = NULL;
+    // Node *second = NULL;
+    // Node *third = NULL;
+    // head = new Node(10);
+    // second = new Node(20);
+    // head->next = second;
+    // third = new Node (30);
+    // second->next = third;
+    //alternative approach
+    
+    Node *head = new Node(10);
+    head->next = new Node(20);
+    head->next->next = new Node(30);
     printNode(head);
 
     
