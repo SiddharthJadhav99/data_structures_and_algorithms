@@ -8,5 +8,10 @@ int main(){
     for (int x : arr){
         cout<<x<<"\t";
     }
-    
+    cout<<endl;
+    sort(arr.begin(),arr.end(),greater<int>());
+    for (int j : arr){
+        cout<<j<<"\t";
+    }
+    return 0;
 }
