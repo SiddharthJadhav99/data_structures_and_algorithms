@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 struct node{
     int data;
     node* next;
@@ -8,6 +9,7 @@ struct node{
         next == NULL;
     }
 };
+
 node* traversalLL(node* head){
     if(head == NULL){
         return NULL;
