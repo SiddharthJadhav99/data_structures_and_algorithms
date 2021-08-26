@@ -9,11 +9,11 @@ struct node{
     }
 };
 node* insertAtBegin(node* head, int num){
+    node* temp = new node(num);
     if (head == NULL){
-        return NULL;
+        temp->next = temp;
     }
     node* curr = head;
-    node* temp = new node(num);
     while(curr->next != NULL){
        curr = curr->next;
     }
