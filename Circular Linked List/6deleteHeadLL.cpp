@@ -9,6 +9,13 @@ struct node{
     }
 };
 node* deleteHead(node* head){
+    if (head == NULL){
+        return NULL;
+    }
+    if (head->next == head){
+        delete head;
+        return NULL;
+    }
     node* curr = head;
     while(curr->next != head){
         curr = curr->next;
