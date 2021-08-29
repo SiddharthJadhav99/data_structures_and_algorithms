@@ -47,6 +47,7 @@ struct MyStack{
 };
 int main(){
     MyStack s;
+    cout<<s.pop()<<endl;
     s.push(10);
     s.push(20);
     s.push(30);
