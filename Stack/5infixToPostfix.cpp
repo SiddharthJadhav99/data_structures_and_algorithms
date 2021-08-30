@@ -70,7 +70,7 @@ void infixToPostfix(string str){
     cout<<output<<endl;
 }
 int main(){
-    string str = "a+b*c";
+    string str = "a+b*(c^d-e)^(f+g*h)-i";
     infixToPostfix(str);
     return 0;
 }
