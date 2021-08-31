@@ -38,6 +38,7 @@ struct MyQueue{
         int res = head->data;
         node* temp = head;
         head = head->next;
+        if(front == NULL){rear = NULL; }
         delete(temp);
         return res;
         size--;
