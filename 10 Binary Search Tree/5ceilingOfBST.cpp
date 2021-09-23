@@ -26,6 +26,7 @@ node* insert(node* root, int x){
 
 node* ceiling(node* root, int x){
     node* res = NULL;
+    while(root != NULL){
     if(root == NULL){
         return root;
     }
@@ -37,6 +38,7 @@ node* ceiling(node* root, int x){
         root = root->left;
     }
     return res;
+    }
 }
 int main(){
     int x;
