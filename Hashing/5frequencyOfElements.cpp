@@ -1,4 +1,5 @@
 #include <iostream>
+#include <unordered_map>
 using namespace std;
 
 void frequencyOfArray(int arr[], int n){
@@ -20,6 +21,18 @@ void frequencyOfArray(int arr[], int n){
             }
         }
         cout<<arr[i]<<"  "<<freq<<endl;
+    }
+}
+
+//efficient method
+
+void frequencyOfElementsHM(int arr[], int n){
+    unordered_map<int,int> s;
+    for(int x = 0; x < n; x++){
+        s[x]++;
+    }
+    for(auto e : arr){
+        cout<<e.first<<" "<<e.second<<endl;
     }
 }
 
