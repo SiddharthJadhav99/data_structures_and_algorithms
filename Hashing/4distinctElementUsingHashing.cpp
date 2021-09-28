@@ -1,6 +1,7 @@
 #include <iostream>
 #include <unordered_set>
 using namespace std;
+
 int countDistinctHashing(int arr[], int n){
     unordered_set<int> s;
     for(int i = 0; i < n; i++){
@@ -8,6 +9,7 @@ int countDistinctHashing(int arr[], int n){
     }
     return s.size();
 }
+
 //more efficient
 int countDistinctEfficient(int arr[], int n){
     unordered_set<int> s(arr,arr+n);
