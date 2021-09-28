@@ -8,6 +8,12 @@ int countDistinctHashing(int arr[], int n){
     }
     return s.size();
 }
+//more efficient
+int countDistinctEfficient(int arr[], int n){
+    unordered_set<int> s(arr,arr+n);
+    return s.size();
+}
+
 int main(){
     int n;
     cin>>n;
