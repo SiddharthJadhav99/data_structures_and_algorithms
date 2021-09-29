@@ -7,7 +7,7 @@ int firstOccurance(vector<int> arr, int n, int low, int high){
         if (arr[mid] > n){
             high = mid - 1;
         }
-        else if (arr[mid] > n){
+        else if (arr[mid] < n){
             low = low + 1;
         }
         else {
