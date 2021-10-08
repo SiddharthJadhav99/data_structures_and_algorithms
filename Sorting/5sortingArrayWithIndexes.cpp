@@ -4,7 +4,7 @@ using namespace std;
 void sorting (vector<int> arr, int start, int mid, int end){
     vector<int> left;
     vector<int> right;
-    for (int i = start; i < mid; i++){
+    for (int i = start; i <= mid; i++){
         left.push_back(arr[i]);
     }
     for (int j = mid+1; j < end; j++){
