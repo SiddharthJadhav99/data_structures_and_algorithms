@@ -20,7 +20,7 @@ int main(){
             lar = arr[i];
         }
     }
-    if(seclar = -1){
+    if(seclar == -1){
         cout<<"No second largest found "<<endl;
         return 0;
     }
