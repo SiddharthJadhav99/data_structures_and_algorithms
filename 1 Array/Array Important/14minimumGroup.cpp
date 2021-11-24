@@ -5,13 +5,14 @@ int main(){
     int n = sizeof(arr)/sizeof(arr[0]);
     int count_zero = 0;
     int count_one = 0;
-    int store = arr[0];
-    for(int i = 1; i < n; i++){
-        if(arr[i] == store){
+    int i = 0;
+    while(i < n){
+    if(arr[i] == 0){
+        while(arr[i] != 0){
             count_zero++;
         }
-        else{
-            count_one++;
-        }
+        
     }
+    }
+    
 }

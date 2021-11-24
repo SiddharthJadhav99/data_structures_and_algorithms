@@ -28,11 +28,11 @@ void frequencyOfArray(int arr[], int n){
 
 void frequencyOfElementsHM(int arr[], int n){
     unordered_map<int,int> s;
-    for(int x = 0; x < n; x++){
-        s[x]++;
+    for(int i = 0; i < n; i++){
+        s[i]++;
     }
-    for(auto e : arr){
-        cout<<e.first<<" "<<e.second<<endl;
+    for(auto x : s){
+        cout<<x.first<<" "<<x.second;
     }
 }
 
