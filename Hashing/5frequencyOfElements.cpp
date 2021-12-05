@@ -3,7 +3,7 @@
 using namespace std;
 
 void frequencyOfArray(int arr[], int n){
-    for(int i = 0; i < n-k+1; i++){
+    for(int i = 0; i < n; i++){
         int freq = 1;
         bool flag = true;
         for(int j = 0; j < i; j++){

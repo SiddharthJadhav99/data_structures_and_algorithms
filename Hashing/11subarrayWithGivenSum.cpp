@@ -5,7 +5,7 @@ bool subArraySum(int arr[], int n, int x){
     int sum = 0;
     for(int i = 0; i < n; i++){
         sum = sum + arr[i];
-        if(s.find(x-sum) != s.end()){
+        if(s.find(abs(x-sum)) != s.end()){
             return true;
         }
         else if(sum == x){
