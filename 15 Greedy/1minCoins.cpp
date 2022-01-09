@@ -17,5 +17,4 @@ int main(){
         }
     }
     cout<<coins<<endl;
-
 }
