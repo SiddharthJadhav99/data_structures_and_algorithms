@@ -4,7 +4,7 @@ using namespace std;
 void sortAndPrint(vector<int> arr1, vector<int> arr2, int m, int n){
     int i = 0; 
     int j = 0;
-    while (i < m && i < n){
+    while (i < m && j < n){
         if (arr1[i] <= arr2[j]){
             cout<<arr1[i]<<"\t";
             i++;
